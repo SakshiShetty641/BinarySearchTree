@@ -1,6 +1,6 @@
 package com.bridgelabz;
 /**
- * Purpose - To create Binary Search Tree and add more values
+ * Purpose - To add values in Binary Search Tree and check whether 63 is present.
  * @author - Sakshi Shetty
  * @version - 16.0
  * @since - 2021-08-23
@@ -23,5 +23,10 @@ public class BinarySearchTree {
         myTree.add(63);
         myTree.add(67);
         myTree.print(myTree.root);
+        boolean flag = myTree.search(63);
+        if (flag == true)
+            System.out.println("\n63 is present");
+        else
+            System.out.println("\n63 is not present");
     }
 }
